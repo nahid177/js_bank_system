@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="">
+    <header class="py-[40px]">    <h2 class="text-center text-[40px] font-[600]">Functional <span class="text-[#33895B]">Bank-System</span></h2>
+    </header>
+    
+
+    <main class="grid  mx-auto">
+        <div class="flex mt-[30px] gap-[30px] mx-auto ">
+
+            <div class="bg-[#E1EE08] w-[230px] h-[100px] p-[20px] rounded-lg ">
+                <h1 class="text-[#fff] font-[400] text-[20px]">Deposit</h1>
+                <h1 class="text-[#fff] font-[400] text-[30px]">$<span id="deposit-total">00</span></h1>
+            </div>
+            <div class="bg-[#9F6443] w-[230px] h-[100px] p-[20px] rounded-lg">
+                <h1 class="text-[#fff] font-[400] text-[20px]">Withdraw</h1>
+                <h1 class="text-[#fff] font-[400] text-[30px]">$<span id="withdraw-total">00</span></h1>
+            </div>
+            <div class="bg-[#33C3EE] w-[230px] h-[100px] p-[20px] rounded-lg">
+                <h1 class="text-[#fff] font-[400] text-[20px]">Balance</h1>
+                <h1 class="text-[#fff] font-[400] text-[30px]">$<span id="dalance-total">00</span></h1>
+            </div>
+    
+        </div>
+    
+    
+        <div class="flex mt-[30px] gap-[30px] mx-auto">
+    
+            <div class="bg-[#33C3EE] w-[370px] h-[130px] p-[20px] rounded-lg">
+                <h1 class="text-[#fff] text-[20px] ">Your Deposit</h1>
+                <input type="number" name="money" id="deposit-field" placeholder=" $ Amount you want to deposit" class="w-[280px] rounded px-[10px]"><br>
+                <button id="btn-deposit" class="bg-[#330990] text-[#fff] w-[60px] text-[10px] h-[20px] rounded	hover:bg-blue-600"> Deposit</button>
+            </div>
+            <div class="bg-[#E1EE08] w-[370px] h-[130px] p-[20px] gap-[30px] rounded-lg">
+                <h1 class="text-[#fff] text-[20px] ">Your Withdraw</h1>
+                <input type="number" name="money" id="withdraw-field" placeholder=" $ Amount you want to withdraw" class="w-[280px] rounded px-[10px] "><br>
+                <button id="btn-withdraw" class=" bg-[#330990] text-[#fff] w-[60px] text-[10px] h-[20px] rounded hover:bg-blue-600"> Deposit</button>
+            </div>
+    
+        </div>
+    </main>
+    <script src="utilities.js"></script>
+    <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+</html>
